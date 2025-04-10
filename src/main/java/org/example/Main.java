@@ -28,6 +28,12 @@ public class Main {
       return a; // when i use {} (multi-line block) (require return if method has return type)
     };
     printTable.printSpeak(data); // gọi lambda của đối tượng printTable
+
+    // sử dụng interface được định nghĩa sẵn
+    Runnable runnable = () -> {
+      System.out.println("Hôm nay off nhưng vẫn học bình thường");
+    };
+    System.out.println(runnable);
   }
 
 }
